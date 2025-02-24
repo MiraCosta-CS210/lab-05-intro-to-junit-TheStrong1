@@ -17,6 +17,7 @@
  * it is working the way it should, so that your JUnit tests all pass!
  */
 
+
 public class SumNumbers {
 
     /*   Define a function called sumIsEven() which takes two integer inputs
@@ -24,10 +25,10 @@ public class SumNumbers {
      *   If the sum is an odd number, then return 0 for “false.”
      */
     public int sumIsEven(int a, int b) {
-        if((a+b) % 2 == 2) {
-            return 1;
+        if((a+b) % 2 == 0) { // Corrected: If remainder is 0, sum is even
+            return 1; // Return 1 - True
         } else {
-            return 0;
+            return 0; // Return 0 - False
         }
     }
 }
